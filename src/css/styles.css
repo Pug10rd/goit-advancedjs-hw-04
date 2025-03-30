@@ -1,0 +1,16 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* Common styles */
+@import url('./vars.css');
+@import url('./base.css');
+@import url('./card-set.css');
+
+/* Pages style */
+@import url('./index.css');
+
+/* Utils */
+@import url('./loader.css');

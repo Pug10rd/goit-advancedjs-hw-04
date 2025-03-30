@@ -1,0 +1,117 @@
+.photos-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.input-field {
+  width: 272px;
+  height: 40px;
+
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  color: #2e2f42;
+
+  transition: border-color var(--fast-trns);
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:hover {
+    border-color: #000;
+  }
+}
+
+.input-button {
+  width: 91px;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 8px;
+  background: #4e75ff;
+
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
+  transition: background-color var(--fast-trns);
+
+  &:disabled {
+    background-color: #cfcfcf;
+    color: #989898;
+    cursor: default;
+  }
+
+  &:not(:disabled):hover {
+    background: #6c8cff;
+  }
+}
+
+.gallery {
+  @media only screen and (min-width: 768px) {
+    --items: 2;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    --items: 3;
+  }
+}
+
+.card {
+  border: 1px solid #808080;
+
+  transition: transform var(--fast-trns);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.photo-box {
+  height: 152px;
+}
+
+.photo {
+  object-fit: cover;
+}
+
+.capture {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 4px 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #2e2f42;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.accent {
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.loader {
+  margin: 0 auto;
+}
